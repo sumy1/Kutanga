@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/off_white"
+    tools:context=".Activities.Restorants.Activity.ManageaddressActivity">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/canvas_red_gradient"
+        android:padding="@dimen/_5sdp">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_10sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:src="@drawable/back_icon"></ImageView>
+
+        <com.vibescom.kutanga.View.PMTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_back"
+            android:layout_centerVertical="true"
+            android:text="@string/manage_addreass"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            tools:ignore="RelativeOverlap" />
+
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_myaddress"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/top"
+        android:layout_above="@+id/rel_add_new_address"
+        android:layout_height="wrap_content"/>
+    <RelativeLayout
+        android:id="@+id/rel_add_new_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/canvas_edittext_round_manage_address"
+        android:padding="@dimen/_10sdp">
+
+        <com.vibescom.kutanga.View.PMTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="@dimen/_2sdp"
+            android:textAllCaps="true"
+            android:text="@string/add_new_address"
+            android:textColor="@color/light_pink"
+            android:textSize="@dimen/_12sdp" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

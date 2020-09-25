@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/_220sdp"
+    android:layout_height="@dimen/_230sdp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/relative_rate_review_style"
+    android:layout_marginStart="@dimen/_3sdp"
+    android:layout_marginEnd="@dimen/_3sdp"
+    android:layout_marginBottom="@dimen/_3sdp"
+    app:cardCornerRadius="@dimen/_8sdp"
+    app:cardElevation="@dimen/_3sdp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_banner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_130sdp"
+            android:background="@drawable/canvas_image_top_curve_bg"
+            android:contentDescription="@string/app_desc"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_image_black_24dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_banner"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:id="@+id/profile_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/rate_layout"
+                android:padding="@dimen/_8sdp"
+                android:orientation="vertical">
+
+                <com.vibescom.kutanga.View.PRTextView
+                    android:id="@+id/tv_rest_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Round On Marathon"
+                    android:textColor="@color/black"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textSize="@dimen/_10sdp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/scooter"></ImageView>
+
+                    <com.vibescom.kutanga.View.PRTextView
+                        android:id="@+id/txt_min_distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="30 mins"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        android:textColor="@color/dim_grey"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:textSize="@dimen/_10sdp" />
+                </LinearLayout>
+
+                <com.vibescom.kutanga.View.PRTextView
+                    android:id="@+id/tv_rest_des"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+                    android:textColor="@color/dim_grey"
+                    android:textSize="@dimen/_8sdp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:orientation="horizontal">
+                <com.vibescom.kutanga.View.PRTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/view_menu"
+                    android:layout_marginBottom="@dimen/_1sdp"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/dim_grey"
+                    tools:ignore="RelativeOverlap" />
+                    <ImageView
+                        android:layout_width="@dimen/_12sdp"
+                        android:layout_height="@dimen/_12sdp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:src="@drawable/side_arrow"></ImageView>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

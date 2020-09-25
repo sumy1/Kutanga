@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Restorants.Fragment.PaymentsOfferCoupan">
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:elevation="@dimen/_1sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/enter_coupan_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/canvas_corner_gray"
+            android:padding="@dimen/_5sdp">
+
+            <com.vibescom.kutanga.View.PMEditText
+                android:id="@+id/et_coupon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_coupan_code"
+                android:textColorHint="@color/grey"
+                android:layout_alignParentStart="true"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:paddingLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_toLeftOf="@+id/txt_apply"
+                android:textColor="@color/black"
+                android:background="@null"
+                android:textSize="@dimen/_12sdp"
+                android:inputType="text" />
+
+            <com.vibescom.kutanga.View.PMTextView
+                android:id="@+id/txt_apply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/apply"
+                android:textAllCaps="true"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/light_pink"
+                android:textSize="@dimen/_12sdp"
+                tools:ignore="RelativeOverlap" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_below="@+id/top"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lv_mid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:background="#fbf4f5">
+            <com.vibescom.kutanga.View.PMTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/abailable_coupan"
+                android:textAllCaps="true"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/light_pink"
+                android:textSize="@dimen/_12sdp"
+                tools:ignore="RelativeOverlap" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_coupan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lv_mid"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@color/white"></androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+</RelativeLayout>

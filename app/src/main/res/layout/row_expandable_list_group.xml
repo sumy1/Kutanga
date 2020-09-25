@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/parent_item_bg">
+
+
+
+    <com.vibescom.kutanga.View.PMTextView
+        android:id="@+id/tv_category_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_5sdp"
+        android:layout_gravity="center"
+        android:background="@color/gradient_center"
+        android:textColor="@color/white"
+        android:elevation="@dimen/_2sdp"
+        android:textSize="@dimen/_12sdp"/>
+
+
+    <!--<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:orientation="horizontal">
+    <com.vibescom.kutanga.View.PMTextView
+        android:id="@+id/tv_category_name"
+        style="@style/TextView.InputLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Pasta"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10sdp"/>
+
+                <CheckBox
+                    android:id="@+id/ch_favorite"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:tint="@color/white"
+                    android:padding="@dimen/_3sdp"
+                    android:button="@null"
+                    android:background="@drawable/fav_checked_state"
+                    android:stateListAnimator="@animator/scale"/>
+        </LinearLayout>
+
+            <com.vibescom.kutanga.View.PMTextView
+                android:id="@+id/tv_address"
+                style="@style/TextView.InputLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/_8sdp"
+                android:layout_gravity="center"
+                android:text="Pasta"
+                android:textColor="@color/white"
+                android:elevation="@dimen/_2sdp"
+                android:textSize="@dimen/_9sdp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:gravity="center_vertical"
+            android:layout_marginEnd="@dimen/_40sdp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/lv_reviews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:tint="@color/white"
+                        android:src="@drawable/ic_star_24px"></ImageView>
+                    <com.vibescom.kutanga.View.PMTextView
+                        android:id="@+id/tv_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.3"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_10sdp" />
+                </LinearLayout>
+                <com.vibescom.kutanga.View.PMTextView
+                    android:id="@+id/tv_review"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="500 Reviews"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/_8sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical">
+
+                <com.vibescom.kutanga.View.PMTextView
+                    android:id="@+id/tv_delivery_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="30 Mins"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10sdp" />
+
+                <com.vibescom.kutanga.View.PMTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/delivery_time"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/_8sdp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>-->
+</LinearLayout>

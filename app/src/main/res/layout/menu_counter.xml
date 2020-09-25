@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/notifications_badge"
+        android:layout_width="@dimen/_15sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginLeft="@dimen/_2sdp"
+        android:background="@drawable/ic_fill_circle"
+        android:drawableTint="@color/user_theme_color"
+        android:gravity="center"
+        tools:text="1"
+        android:textColor="@android:color/white"
+        android:textSize="8sp" />
+
+</FrameLayout>

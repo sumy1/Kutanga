@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal">
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom_layout"
+        android:orientation="vertical">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_start_vary_20"
+            android:layout_marginEnd="@dimen/margin_start_vary_10"
+            android:layout_marginStart="@dimen/margin_start_vary_10"/>
+
+        <com.vibescom.kutanga.View.PRTextView
+            android:id="@+id/tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/intro_text1"
+            android:textColor="@color/black_semi_transparent"
+            android:textSize="@dimen/text_size_small"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/margin_start_vary_10"
+            android:layout_marginStart="@dimen/margin_start_vary_10"
+            android:layout_marginEnd="@dimen/margin_start_vary_10"/>
+    </LinearLayout>-->
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_layout"
+        android:overScrollMode="never"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:orientation="vertical">
+
+        <com.viewpagerindicator.CirclePageIndicator
+            android:id="@+id/indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_gravity="center_horizontal"
+            android:padding="10dp"
+            app:centered="true"
+            app:fillColor="@color/dim_grey"
+            app:pageColor="@color/grey"
+            app:snap="false" />
+        <com.vibescom.kutanga.View.PMTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_grey"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:text="@string/ready_to_oder_from_kutanga">
+
+        </com.vibescom.kutanga.View.PMTextView>
+
+        <com.vibescom.kutanga.View.PMButton
+            android:id="@+id/btn_get_started"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/canvas_signin_btn_bg"
+            android:text="@string/getstarted"
+            android:textColor="@color/white"
+            android:textAllCaps="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="@dimen/_14sdp"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_2sdp"
+                android:orientation="horizontal">
+                <com.vibescom.kutanga.View.PMTextView
+                    android:id="@+id/txt_create_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/light_pink"
+                    android:textSize="@dimen/_12sdp"
+                    android:padding="@dimen/_2sdp"
+                    android:text="@string/create_n_account">
+
+                </com.vibescom.kutanga.View.PMTextView>
+
+                <com.vibescom.kutanga.View.PMTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dim_grey"
+                    android:textSize="@dimen/_12sdp"
+                    android:padding="@dimen/_2sdp"
+                    android:text="@string/or">
+
+                </com.vibescom.kutanga.View.PMTextView>
+
+                <com.vibescom.kutanga.View.PMTextView
+                    android:id="@+id/txt_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_signIn"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold"
+                    android:padding="@dimen/_2sdp"
+                    android:text="@string/login">
+
+
+                </com.vibescom.kutanga.View.PMTextView>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

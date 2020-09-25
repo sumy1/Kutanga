@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vibescom.kutanga.Fragments.MarketPlaceFragment">
+
+
+
+    <ImageView
+        android:id="@+id/img_res"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_130sdp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/intro_img_2"
+        android:overScrollMode="never"
+        ></ImageView>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recy_rest"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/img_res"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:scrollbars="vertical"
+        ></androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+</RelativeLayout>

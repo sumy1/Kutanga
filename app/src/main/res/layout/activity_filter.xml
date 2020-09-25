@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activities.Restorants.Activity.FilterActivity">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/canvas_red_gradient"
+        android:padding="@dimen/_5sdp">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:padding="@dimen/_10sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:src="@drawable/back_icon"></ImageView>
+
+        <com.vibescom.kutanga.View.PMTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/filters"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            tools:ignore="RelativeOverlap" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:orientation="vertical">
+
+        <com.vibescom.kutanga.View.PMTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/sort_by"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            tools:ignore="RelativeOverlap" />
+
+        <RelativeLayout
+            android:id="@+id/rv_most_popular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp">
+            <RelativeLayout
+                android:id="@+id/mid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <com.vibescom.kutanga.View.PMTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/most_popular"
+                android:textColor="@color/dim_grey"
+                android:textSize="@dimen/_10sdp"
+                tools:ignore="RelativeOverlap" />
+
+            <ImageView
+                android:id="@+id/img_most_popular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:visibility="gone"
+                android:src="@drawable/ic_done_24px"></ImageView>
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_below="@+id/mid"
+                android:background="@color/grey"></View>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rv_price_hi_to_low"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp">
+            <RelativeLayout
+                android:id="@+id/mid1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.vibescom.kutanga.View.PMTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/price_hi_to_low"
+                    android:textColor="@color/dim_grey"
+                    android:textSize="@dimen/_10sdp"
+                    tools:ignore="RelativeOverlap" />
+
+                <ImageView
+                    android:id="@+id/img_price_hi_to_low"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_done_24px"></ImageView>
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_below="@+id/mid1"
+                android:background="@color/grey"></View>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rv_low_to_high"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp">
+            <RelativeLayout
+                android:id="@+id/mid2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.vibescom.kutanga.View.PMTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/low_to_high"
+                    android:textColor="@color/dim_grey"
+                    android:textSize="@dimen/_10sdp"
+                    tools:ignore="RelativeOverlap" />
+
+                <ImageView
+                    android:id="@+id/img_low_to_high"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_done_24px"></ImageView>
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_below="@+id/mid2"
+                android:background="@color/grey"></View>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rv_nearest_to_me"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp">
+            <RelativeLayout
+                android:id="@+id/mid3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.vibescom.kutanga.View.PMTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/nerest_to_me"
+                    android:textColor="@color/dim_grey"
+                    android:textSize="@dimen/_10sdp"
+                    tools:ignore="RelativeOverlap" />
+
+                <ImageView
+                    android:id="@+id/img_nearest_to_me"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_done_24px"></ImageView>
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_below="@+id/mid3"
+                android:background="@color/grey"></View>
+        </RelativeLayout>
+
+        <com.vibescom.kutanga.View.PMTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/cuisines"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            tools:ignore="RelativeOverlap" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_coisines"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:overScrollMode="always"
+            ></androidx.recyclerview.widget.RecyclerView>
+
+        <com.vibescom.kutanga.View.PMTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/price"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            tools:ignore="RelativeOverlap" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp">
+
+            <com.vibescom.kutanga.View.PMTextView
+                android:id="@+id/txt_min_kz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="kz 0.00"
+                android:textColor="@color/dim_grey"
+                android:textSize="@dimen/_10sdp"
+                tools:ignore="RelativeOverlap" />
+
+            <com.vibescom.kutanga.View.PMTextView
+                android:id="@+id/txt_kz_max"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="kz 100.00"
+                android:textColor="@color/dim_grey"
+                android:textSize="@dimen/_10sdp"
+                tools:ignore="RelativeOverlap" />
+
+        </RelativeLayout>
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:max="100" />
+
+        <com.vibescom.kutanga.View.PMButton
+            android:id="@+id/btn_apply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_40sdp"
+            android:background="@drawable/canvas_signin_btn_bg"
+            android:text="@string/apply"
+            android:textColor="@color/white"
+            android:textAllCaps="true"
+            android:padding="@dimen/_5sdp"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="@dimen/_14sdp"
+            />
+
+    </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

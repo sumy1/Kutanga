@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/_16sdp"
+    android:paddingRight="@dimen/_16sdp"
+    android:paddingTop="@dimen/_16sdp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+	//
+
+
+
+    <RelativeLayout
+        android:id="@+id/slideView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/canvas_top_curve_white_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:gravity="center_horizontal"
+            android:text="Slide it down"
+			android:textSize="@dimen/_13sdp"
+            android:textColor="@android:color/darker_gray" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <com.vibescom.kutanga.View.PMTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="SHOW RESTAURANTS BY"
+                        android:textColor="@color/dim_grey"
+                        android:textSize="@dimen/_8sdp"
+                        tools:ignore="RelativeOverlap" />
+
+                    <RelativeLayout
+                        android:id="@+id/rv_most_popular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp">
+
+                        <com.vibescom.kutanga.View.PRRadioButton
+                            android:id="@+id/radia_relivence"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Relevance"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:layout_below="@+id/mid"
+                            android:background="@color/grey"></View>
+                    </RelativeLayout>
+
+
+                    <com.vibescom.kutanga.View.PRRadioButton
+                        android:id="@+id/radio_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="@string/price"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp"
+                        tools:ignore="RelativeOverlap" />
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <com.vibescom.kutanga.View.PMTextView
+                            android:id="@+id/txt_min_kz"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:text="kz 0.00"
+                            android:textColor="@color/dim_grey"
+                            android:textSize="@dimen/_10sdp"
+                            tools:ignore="RelativeOverlap" />
+
+                        <com.vibescom.kutanga.View.PMTextView
+                            android:id="@+id/txt_kz_max"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:text="Rs 1000"
+                            android:textColor="@color/dim_grey"
+                            android:textSize="@dimen/_10sdp"
+                            tools:ignore="RelativeOverlap" />
+
+                    </RelativeLayout>
+
+                    <SeekBar
+                        android:id="@+id/seekBar_price"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:padding="@dimen/_5sdp"
+                        android:max="1000" />
+
+                    </LinearLayout>
+
+
+                    <com.vibescom.kutanga.View.PRRadioButton
+                        android:id="@+id/radio_delivery_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Delivery Time"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp"
+                        tools:ignore="RelativeOverlap" />
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_delivery_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <com.vibescom.kutanga.View.PMTextView
+                                android:id="@+id/txt_min_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:text="Min 0.00"
+                                android:textColor="@color/dim_grey"
+                                android:textSize="@dimen/_10sdp"
+                                tools:ignore="RelativeOverlap" />
+
+                            <com.vibescom.kutanga.View.PMTextView
+                                android:id="@+id/txt_kz_max_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:text="Min 60"
+                                android:textColor="@color/dim_grey"
+                                android:textSize="@dimen/_10sdp"
+                                tools:ignore="RelativeOverlap" />
+
+                        </RelativeLayout>
+
+                        <SeekBar
+                            android:id="@+id/seekBar_deliveryTime"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:padding="@dimen/_5sdp"
+                            android:max="60" />
+
+                    </LinearLayout>
+
+
+                    <com.vibescom.kutanga.View.PRRadioButton
+                        android:id="@+id/radio_min_order"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Minimum Order "
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp"
+                        tools:ignore="RelativeOverlap" />
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_min_order"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <com.vibescom.kutanga.View.PMTextView
+                                android:id="@+id/txt_min_order"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:text="kz 0"
+                                android:textColor="@color/dim_grey"
+                                android:textSize="@dimen/_10sdp"
+                                tools:ignore="RelativeOverlap" />
+
+                            <com.vibescom.kutanga.View.PMTextView
+                                android:id="@+id/txt_max_order"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:text="kz 1000"
+                                android:textColor="@color/dim_grey"
+                                android:textSize="@dimen/_10sdp"
+                                tools:ignore="RelativeOverlap" />
+
+                        </RelativeLayout>
+
+                        <SeekBar
+                            android:id="@+id/seekBar_minOrder"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:padding="@dimen/_5sdp"
+                            android:max="60" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <com.vibescom.kutanga.View.PRRadioButton
+                                android:id="@+id/radio_rating_fiveStr"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_centerHorizontal="true"
+                                android:text="5 stars"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_10sdp"
+                                tools:ignore="RelativeOverlap" />
+
+                            <com.vibescom.kutanga.View.PRRadioButton
+                                android:id="@+id/radio_fourStart"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:text="4 stars &amp; above"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_10sdp"
+                                tools:ignore="RelativeOverlap" />
+
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:orientation="horizontal">
+                            <com.vibescom.kutanga.View.PRRadioButton
+                                android:id="@+id/radio_rating_threestar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_centerHorizontal="true"
+                                android:text="3 stars &amp; above"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_10sdp"
+                                tools:ignore="RelativeOverlap" />
+                            <com.vibescom.kutanga.View.PRRadioButton
+                                android:id="@+id/radio_rating_twoStr"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:text="2 stars &amp; above"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_10sdp"
+                                tools:ignore="RelativeOverlap" />
+
+
+                        </LinearLayout>
+
+                        <com.vibescom.kutanga.View.PRRadioButton
+                            android:id="@+id/radio_oneStart"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:text="1 stars &amp; above"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_10sdp"
+                            tools:ignore="RelativeOverlap" />
+
+                    </LinearLayout>
+
+
+
+                    <com.vibescom.kutanga.View.PMButton
+                        android:id="@+id/btn_apply"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="@dimen/_40sdp"
+                        android:background="@drawable/canvas_signin_btn_bg"
+                        android:text="@string/apply"
+                        android:textColor="@color/white"
+                        android:textAllCaps="true"
+                        android:padding="@dimen/_5sdp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:textSize="@dimen/_14sdp"
+                        />
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

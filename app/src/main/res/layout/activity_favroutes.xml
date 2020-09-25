@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activities.Restorants.Activity.ManageaddressActivity">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/canvas_red_gradient"
+        android:padding="@dimen/_5sdp">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_10sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:src="@drawable/back_icon"></ImageView>
+
+        <com.vibescom.kutanga.View.PMTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/myfavroutedelivery"
+            android:layout_toRightOf="@+id/img_back"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:textColor="@color/user_theme_color"
+            android:textSize="@dimen/_12sdp"
+            tools:ignore="RelativeOverlap" />
+
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_my_fav"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/top"
+        android:background="@color/white"
+        android:layout_above="@+id/rel_add_new_address"
+        android:layout_height="wrap_content"/>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_view_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        app:duration="800">
+
+        <!-- Adding 7 rows of placeholders -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <include layout="@layout/row_view_shimmer_fav" />
+            <include layout="@layout/row_view_shimmer_fav" />
+            <include layout="@layout/row_view_shimmer_fav" />
+            <include layout="@layout/row_view_shimmer_fav" />
+            <include layout="@layout/row_view_shimmer_fav" />
+            <include layout="@layout/row_view_shimmer_fav" />
+            <include layout="@layout/row_view_shimmer_fav" />
+            <include layout="@layout/row_view_shimmer_fav" />
+            <include layout="@layout/row_view_shimmer_fav" />
+            <include layout="@layout/row_view_shimmer_fav" />
+            <include layout="@layout/row_view_shimmer_fav" />
+            <include layout="@layout/row_view_shimmer_fav" />
+        </LinearLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/rv_cart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:id="@+id/img_cart"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:src="@drawable/ic_restaurant"
+            android:layout_centerVertical="true"
+            android:tint="@color/dark_grey"
+            android:layout_centerInParent="true"></ImageView>
+
+        <com.vibescom.kutanga.View.PMTextView
+            android:id="@+id/tv_cart_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_cart"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="-2dp"
+            android:text="Empty Favourite"
+            android:textColor="@color/dark_grey"
+            android:textSize="@dimen/_12sdp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

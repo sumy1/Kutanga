@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Kutanga</string>
+    <string name="app_desc">Kutanga</string>
+    <string name="getstarted">INICIAR</string>
+    <string name="ready_to_oder_from_kutanga">Pronto para pedir de Kutanga</string>
+    <string name="ready_to_oder_from_kutanga_food">Pronto para pedir comida Kutanga</string>
+    <string name="have_an_account">Ter uma conta ?</string>
+    <string name="login">Conecte-se</string>
+
+    <string name="facebook_app_id">112454193529642</string>
+    <string name="fb_login_protocol_scheme">fb112454193529642</string>
+
+    <string name="google_key">AIzaSyDTRf0mXatjzBhNg0ryKMLWXsseHxLKZpE</string>
+
+
+    <!--  <string name="message_internal_inconsistency">Ocorreu alguma inconsistência interna.\nPor favor, tente novamente.</string>
+    <string name="message_network_error">O dispositivo não se conecta à internet.</string>
+    <string name="socket_timeout">O servidor de notícias não está respondendo&#8230;</string>
+    <string name="message_server_not_responding_error">O servidor de notícias não está respondendo!</string>-->
+
+
+    <string name="message_internal_inconsistency">Houve uma inconsistência interna. \ n Por favor, tente novamente.</string>
+
+    <string name="message_network_error">O dispositivo não se conecta à Internet.</string>
+
+    <string name="socket_timeout">O servidor Kutanga não está respondendo</string>
+    <string name="message_server_not_responding_error">O servidor Kutanga não está respondendo!</string>
+
+
+    <string name="intro_text1">Obtenha tudo o que deseja \ n em uma loja</string>
+    <string name="intro_text2">Peça de uma ampla gama de \ ncoleção</string>
+    <string name="intro_text3">Entrega rápida na \ n sua porta</string>
+    <string name="sign_in">Assinar em</string>
+    <string name="email">O email</string>
+    <string name="password">Senha</string>
+    <string name="con_password">Confirme a Senha</string>
+    <string name="forgot_pass">Esqueceu a senha?</string>
+    <string name="reset_pass">Redefinir senha?</string>
+    <string name="or_signin_with">Ou faça login com</string>
+    <string name="facebook">Facebook</string>
+    <string name="google">Google</string>
+
+    //Error Validations
+    <string name="user_error">O nome de usuário não pode estar vazio</string>
+    <string name="name_error">O nome não pode estar vazio</string>
+    <string name="email_error">Id de email não pode estar vazio</string>
+    <string name="phone_error">O número do telefone não pode estar vazio</string>
+    <string name="pass_error">A senha não pode ficar em branco</string>
+    <string name="msg_error">A mensagem não pode estar vazia</string>
+    <string name="msg_title">O título não pode estar vazio</string>
+    <string name="error_invalid_email">Entrada inválida para ID de email</string>
+    <string name="error_invalid_phone">Entrada inválida para número de telefone</string>
+    <string name="error_invalid_password">A senha é muito curta</string>
+    <string name="error_invalid_credential">Entrada inválida para nome</string>
+    <string name="error_cannot_be_empty">O campo não pode estar vazio</string>
+    <string name="error_landmark">Por favor, adicione um marco</string>
+    <string name="error_house">Adicione o número da casa / rua</string>
+    <string name="error_tag">Digite o nome da tag</string>
+    <string name="error_address">Digite o endereço</string>
+    <string name="message">Publique a sua crítica</string>
+
+
+    //Forget password Validation
+
+    <string name="old_pass_msg">Por favor insira a senha antiga</string>
+    <string name="old_pass_invalid">A senha antiga é inválida</string>
+    <string name="new_pass_msg">Por favor insira uma nova senha</string>
+    <string name="renew_pass_msg">Por favor, digite sua nova senha</string>
+    <string name="renew_pass_invalid">O campo deve corresponder à nova senha</string>
+    <string name="pass_success">A senha foi alterada com sucesso. Faça o login novamente</string>
+    <string name="profile_success">Perfil foi atualizado com sucesso</string>
+    <string name="email_id_msg">Por favor insira o Id do email</string>
+    <string name="email_id_invalid">Por favor insira um id de email válido</string>
+    <string name="error_msg">Erro</string>
+    <string name="fb_msg">
+Erro ao concluir a autenticação do Facebook. Por favor, tente novamente. Se o problema persistir, faça login usando seu e-mail e senha</string>
+    <string name="gl_msg">
+Erro ao concluir a autenticação do Google. Por favor, tente novamente. Se o problema persistir, faça login usando seu e-mail e senha</string>
+
+
+    //Forgot Password Dialog
+    <string name="forgot_password">Esqueceu a senha</string>
+    <string name="registered_email_id">Id de email registrado</string>
+    <string name="forgot_password_msg">O link de redefinição de senha foi enviado para o seu ID de e-mail registrado</string>
+    <string name="forgot_submit">Enviar</string>
+    <string name="post_review">Post Review</string>
+    <string name="successful">Bem-sucedida</string>
+    <string name="done_txt">Feita</string>
+    <string name="kutanga_offerings">Ofertas Kutanga</string>
+    <string name="market_place">Mercado</string>
+    <string name="restorant_food"><![CDATA[Restaurante e comida]]></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Olá fragmento em branco</string>
+    <string name="restorant">Restaurantes</string>
+    <string name="choose_your_location_intro">Escolha sua localização e</string>
+    <string name="choose_your_locatio_part">nós vamos indo</string>
+    <string name="set_delivery_location">DEFINIR LOCAL DE ENTREGA</string>
+
+
+    <!--Permissions-->
+    <string name="ask_permission_text">Peça permissão</string>
+    <string name="discard_text">Descartar</string>
+    <string name="location_permission_required_text">A permissão de localização é necessária para uma melhor experiência do usuário!</string>
+
+    <string name="continue_txt">Continuar</string>
+    <string name="Api_key">AIzaSyDDPyuVp8sS0re5B-VhYau4ZG36Y08EJ7g</string>
+    <string name="title_activity_location">Mapa</string>
+    <string name="set_delivery_locationn">Definir local de entrega</string>
+    <string name="search_for_area">Pesquise por área, nome de rua ...</string>
+    <string name="enable_location_service">Habilitar serviço de localização</string>
+    <string name="get_current_location">Localização atual</string>
+    <string name="chnage">MUDANÇA</string>
+    <string name="confirm_location">CONFIRMAR LOCALIZAÇÃO</string>
+    <string name="tag_location">Marque este local mais tarde</string>
+    <string name="homee">Casa</string>
+    <string name="work">Trabalhos</string>
+    <string name="hotel">Hotel</string>
+    <string name="other">De outros</string>
+    <string name="offer">Oferta</string>
+    <string name="search">Procurar</string>
+    <string name="profile">Perfil</string>
+    <string name="cart">Carrinho</string>
+    <string name="set_delivery_to">Entregando para</string>
+    <string name="best_offer">Melhor oferta</string>
+    <string name="take_your_pic">Pegue sua foto!</string>
+    <string name="in_sport_lite">No Sport Light</string>
+    <string name="explore_restorants">Explore novos restautrantes</string>
+    <string name="top_pic_for_you">Fotos principais para você</string>
+    <string name="see_all">Ver tudo</string>
+    <string name="featured_brands">Marcas em destaque</string>
+    <string name="restorants_type">Tipo de restaurante:</string>
+    <string name="minOder">Ordem minima :</string>
+    <string name="view_menu">Ver Menu</string>
+    <string name="trending">Tendência</string>
+    <string name="filter">Filtro</string>
+    <string name="preparation_time">Tempo de preparação:</string>
+    <string name="popularity">Popularidade:</string>
+    <string name="delivery_time">Tempo de entrega</string>
+    <string name="use_coupan">Use cupom</string>
+    <string name="recommended">Recomendada</string>
+    <string name="viewCart">Ver carrinho</string>
+    <string name="welcome">BEM-VINDA</string>
+    <string name="username">Nome do usuário</string>
+    <string name="phone">telefone</string>
+    <string name="signUp">INSCREVER-SE</string>
+    <string name="agreeTerams">Ao clicar em Inscrever-se, você concorda com nossos Termos e Condições</string>
+    <string name="already_an_account">Já é uma conta?</string>
+    <string name="customize">Customizar</string>
+    <string name="apply_coupan">Aplicar cupom</string>
+    <string name="apply">Aplique</string>
+    <string name="item">Item</string>
+    <string name="open">ABRIR</string>
+    <string name="close">PERTO</string>
+    <string name="item_total">Total de itens</string>
+    <string name="restorants_charges">Taxas de restaurador</string>
+    <string name="delivery_fee">Taxa de entrega</string>
+    <string name="total">Total</string>
+    <string name="proceed_to_checkout">FAZER O CHECK-OUT</string>
+    <string name="pay_pal">PayPal</string>
+    <string name="multicasia">Multicaixa</string>
+    <string name="payment">Forma de pagamento</string>
+    <string name="credit_debit">Cartão de Crédito / Débito</string>
+    <string name="card_number">Número do cartão</string>
+    <string name="expiration_date">Data de validade</string>
+    <string name="cvv">CVV</string>
+    <string name="card_holder_name">Nome do Titular</string>
+    <string name="number">1234 1234 1234 1234</string>
+    <string name="date">06/24</string>
+    <string name="order_details">Detalhes do pedido</string>
+    <string name="order_id">Id do pedido -</string>
+    <string name="estimate_delivery_time">Tempo estimado de entrega:</string>
+    <string name="food_item">Item alimentar -</string>
+    <string name="set_delivery_too">Entrega para -</string>
+    <string name="cancel_oorder">Cancelar seu pedido</string>
+    <string name="edit">Editar</string>
+    <string name="addresses">Endereços</string>
+    <string name="favroutes">Favoritas</string>
+    <string name="myfavroutedelivery">Meus favoritos - Entrega de comida</string>
+    <string name="resetpassword">Redefinir senha</string>
+    <string name="past_orders">Pedidos anteriores</string>
+    <string name="logout">Sair</string>
+    <string name="myorder">Meu pedido</string>
+    <string name="order_total_amount">Valor total do pedido -</string>
+    <string name="reorder">Reordenar</string>
+    <string name="edit_account">EDITAR CONTA</string>
+    <string name="phone_number">NÚMERO DE TELEFONE</string>
+    <string name="update">ATUALIZAR</string>
+    <string name="manage_addreass">Gerenciar endereços</string>
+    <string name="add_new_address">ADICIONAR NOVO ENDEREÇO</string>
+    <string name="delete">Excluir</string>
+    <string name="edit_address">EDITAR ENDEREÇO</string>
+    <string name="tag">TAG</string>
+    <string name="accept_cash"><![CDATA[Aceita dinheiro e pagamentos online]]></string>
+    <string name="offers">Ofertas</string>
+    <string name="quarter">Trimestre</string>
+    <string name="half">Metade</string>
+    <string name="full">Cheia</string>
+    <string name="filters">Filtros</string>
+    <string name="sort_by">Ordenar por</string>
+    <string name="most_popular">Mais popular</string>
+    <string name="price_hi_to_low">Preço alto para baixo</string>
+    <string name="low_to_high">Preço baixo para alto</string>
+    <string name="nerest_to_me">Mais perto de mim</string>
+    <string name="cuisines">Cozinhas</string>
+    <string name="price">Preço</string>
+    <string name="enter_coupan_code">Digite o código Coupan</string>
+    <string name="abailable_coupan">CUPANOS DISPONÍVEIS</string>
+    <string name="more">+ MAIS</string>
+    <string name="tearms_condition"><![CDATA[Terams e condições]]></string>
+    <string name="search_for_res_food">Pesquise restaurantes e comida</string>
+    <string name="reviews">Avaliações</string>
+
+
+    <string name="otp">Digite o código de verificação</string>
+    <string name="sent_verification">Enviamos um código de verificação em seu ID de e-mail.</string>
+    <string name="expire_otp">Seu código irá expirar em</string>
+    <string name="timer_txt">2:00</string>
+    <string name="click_continue">Clique para continuar</string>
+    <string name="resend">Reenviar código</string>
+    <string name="success_register">Sua conta foi criada com sucesso.</string>
+    <string name="congrats">Parabéns</string>
+    <string name="code_msg">Insira o código de verificação</string>
+    <string name="code_invalid">Código de verificação incorreto</string>
+    <string name="code_expired">O código de verificação expirou</string>
+    <string name="houseNo">CASA / FLAT / BLOCO NO.</string>
+    <string name="laandmark">MARCO</string>
+    <string name="saveAs">SALVAR COMO</string>
+    <string name="example_place">por exemplo: casa do papai, casa dos amigos</string>
+    <string name="cancel">Cancelar</string>
+    <string name="offerabove">off no pedido acima</string>
+    <string name="kg">Kz</string>
+    <string name="of">% de desconto até</string>
+    <string name="km">km</string>
+    <string name="min">Min</string>
+    <string name="pasta">Massa</string>
+    <string name="update_item">Atualizar item</string>
+    <string name="add_item">Adicionar Item</string>
+    <string name="cutomize">Customizar</string>
+    <string name="remove">Remover</string>
+    <string name="restaurants">RESTAURANTES</string>
+    <string name="dishes">PRATOS</string>
+    <string name="new_customer">Novo para o cliente?</string>
+    <string name="payment_type">Tipo de pagamento:</string>
+    <string name="notification">Notificaçõe</string>
+    <string name="check_notifications">Verifique sua autenticação atual</string>
+    <string name="past_orders_check">Verifique seus pedidos anteriores</string>
+    <string name="laert_msgg">Seu item no carrinho será removido. Você deseja continuar?</string>
+    <string name="select_delivery_address">Selecione um endereço de entrega</string>
+    <string name="set_deliver_to">Entregar para</string>
+    <string name="go_to_my_order">Vá para meus pedidos</string>
+    <string name="track_order">Acompanhar Pedido</string>
+    <string name="view_details">Ver detalhes</string>
+    <string name="cencel_order">Cancelar pedido</string>
+    <string name="total_paid">Total pago:</string>
+    <string name="myorder_deliveryfood">Meus Pedidos - Entrega de Alimentos</string>
+    <string name="bill_details">Detalhes da conta</string>
+    <string name="sub_total">Subtotal</string>
+    <string name="food_tax">Imposto Alimentar</string>
+    <string name="restaurants_charges">Taxas de restaurantes</string>
+    <string name="delivery_charges">Taxas de entrega</string>
+    <string name="order_total">total de pedidos</string>
+    <string name="order_placed">Pedido feito</string>
+    <string name="cencelled">Cancelada</string>
+    <string name="accepted">Aceitaram</string>
+    <string name="unread">Não lida</string>
+    <string name="read">Ler</string>
+    <string name="min_order">Ordem minima</string>
+    <string name="restutants_close">Restaurantes \ n Fechados</string>
+    <string name="mnagedAddares_alertt">Para visualizar seu endereço gerenciado, faça login em sua conta existente ou inscreva-se</string>
+    <string name="fav_alertt">Para ver o seu favorito, faça login em sua conta existente ou inscreva-se</string>
+    <string name="notification_alertt">Para ver sua notificação, faça login em sua conta existente ou inscreva-se</string>
+    <string name="resetPass_alertt">Para redefinir sua senha, faça login em sua conta existente ou inscreva-se</string>
+    <string name="loginSignup_alert">Para fazer seu pedido, faça login em sua conta existente ou inscreva-se</string>
+    <string name="select_language">Selecione o idioma</string>
+    <string name="english">Inglês</string>
+    <string name="purtgal">Portugal</string>
+    <string name="french">Francesa</string>
+    <string name="use_code">Use cupom</string>
+    <string name="get"> &amp; obter</string>
+    <string name="use_code_get">desconto até </string>
+    <string name="kz_order">Kz sob encomenda</string>
+    <string name="above_and"><![CDATA[& acima]]></string>
+    <string name="minus_more"><![CDATA[- VIEW T&C]]></string>
+    <string name="plus_more"><![CDATA[+ VIEW T&C]]></string>
+    <string name="copy_code">CÓDIGO DE CÓPIA</string>
+    <string name="copied">COPIADA</string>
+    <string name="choose_your_quantity">Escolha sua quantidade</string>
+    <string name="empty_cart_validation">Seu carrinho está vazio.</string>
+    <string name="resturants_not_found">Restaurantes não encontrados!</string>
+    <string name="dishes_not_found">Nenhum prato encontrado!</string>
+    <string name="address">Endereço</string>
+    <string name="call_us"><![CDATA[Ligue-nos e contrate-nos]]></string>
+    <string name="question">Tem alguma dúvida?</string>
+
+
+    <string name="create_n_account">Crie a sua conta aqui</string>
+    <string name="or">OU</string>
+    <string name="empty_order">Pedido vazio</string>
+    <string name="slide_down">Deslize para baixo</string>
+    <string name="write_review">Escreva uma crítica</string>
+    <string name="my_account">Minha conta</string>
+    <string name="clearall">Limpar tudo</string>
+    <string name="comment">Comente :</string>
+    <string name="confirm">confirme</string>
+    <string name="offer_no">Nenhuma oferta está disponível agora!</string>
+    <string name="change_language">Mudar idioma</string>
+    <string name="ok">Está bem</string>
+    <string name="food_delivery">Entrega de alimentos</string>
+    <string name="market_delivery">Mercado</string>
+    <string name="my_fav">Mes préférés</string>
+    <string name="fav_chcek">Verifique sua comida favorita</string>
+    <string name="check_your_profile">Verifique seu perfil</string>
+    <string name="offer_not_available">Offre actuellement non disponible !</string>
+    <string name="account">CONTA</string>
+    <string name="account_suggection">Faça login / crie uma conta rapidamente para gerenciar pedidos</string>
+    <string name="live_for_food">AO VIVO \ n PARA \ nFOOD</string>
+    <string name="order_food_online">Peça comida online no</string>
+    <string name="order_food_onlinee">Melhores Restaurante</string>
+    <string name="explore">Explorar</string>
+    <string name="address_new">Nova Deli, India</string>
+    <string name="search_validation">Digite Restuarants / Food</string>
+    <string name="forgot_your_password">Esqueça sua senha</string>
+    <string name="no_warries">Não se preocupe !</string>
+    <string name="forgot_password_desc">Precisamos do seu endereço de e-mail registrado para enviar um link de redefinição de senha.</string>
+    <string name="skip"><u>Pular</u></string>
+    <string name="choose_saved_address">Escolha o endereço salvo</string>
+    <string name="order"><u>Ordem</u></string>
+    <string name="itemm">Itens</string>
+</resources>

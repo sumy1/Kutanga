@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:id="@+id/item"
+    android:layout_gravity="center"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/canvas_round_corner_white"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_close"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@null"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_close"
+            android:tint="@color/theme_color"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginBottom="@dimen/_25sdp"
+            android:orientation="vertical">
+
+            <com.vibescom.kutanga.View.PRTextView
+                android:id="@+id/tv_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_35sdp"
+                android:layout_marginEnd="@dimen/_35sdp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/dark_grey"
+                android:textSize="@dimen/_16sdp"/>
+
+            <com.vibescom.kutanga.View.PMButton
+                android:id="@+id/btn_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_25sdp"
+                android:layout_marginEnd="@dimen/_25sdp"
+                android:background="@drawable/canvas_forgot_btn_bg"
+                android:text="@string/continue_txt"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp"/>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/window_background">
+
+
+        <RelativeLayout
+            android:id="@+id/search_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_alignParentTop="true">
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:paddingEnd="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_alignParentBottom="true"
+                android:paddingStart="@dimen/_5sdp"
+                android:src="@drawable/back_icon"></ImageView>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/clear"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_toRightOf="@+id/img_back"
+                android:orientation="vertical">
+
+                <com.vibescom.kutanga.View.PMTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/set_delivery_locationn"
+                    android:textSize="@dimen/_8sdp"
+                    android:textAllCaps="true"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:textColor="@color/light_pink"></com.vibescom.kutanga.View.PMTextView>
+
+                <com.vibescom.kutanga.View.PREditText
+                    android:id="@+id/search_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toStartOf="@+id/clear"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="bold"
+                    android:inputType="textCapWords"
+                    android:hint="@string/search_for_area"
+                    android:singleLine="true"
+                    android:background="@null"
+                    android:textColor="@color/dim_black" />
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:contentDescription="@string/app_desc"
+                android:paddingEnd="@dimen/_5sdp"
+                android:tint="@color/semi_white"
+                android:paddingStart="@dimen/_5sdp"
+                android:src="@drawable/ic_close"
+                android:visibility="gone" />
+
+
+        </RelativeLayout>
+
+       <!-- <RelativeLayout
+            android:id="@+id/btn_grant_access"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:layout_below="@+id/search_layout"
+            android:visibility="gone">
+            <ImageView
+                android:id="@+id/iv_auto_address"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="10dp"
+                android:layout_centerVertical="true"
+                android:tint="@color/blue"
+                android:contentDescription="@string/app_desc"/>
+
+            <com.vibescom.kutanga.View.PRTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/iv_auto_address"
+                android:layout_centerVertical="true"
+                android:text="Get Current Location"
+                android:textSize="12sp"/>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:visibility="gone"/>
+        </RelativeLayout>-->
+
+        <View
+            android:id="@+id/v"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_below="@+id/search_layout"
+            android:background="@color/grey">
+
+        </View>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_below="@+id/v"
+            android:background="@color/window_background" />
+    <RelativeLayout
+        android:id="@+id/btn_grant_access"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp"
+        android:layout_below="@+id/list_search"
+        android:visibility="visible">
+        <ImageView
+            android:id="@+id/iv_auto_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/gps"
+            android:contentDescription="@string/app_desc"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iv_auto_address"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <com.vibescom.kutanga.View.PRTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/get_current_location"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"/>
+            <com.vibescom.kutanga.View.PRTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/enable_location_service"
+                android:textColor="@color/dim_black"
+                android:textSize="@dimen/_8sdp"/>
+        </LinearLayout>
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:visibility="gone"/>
+    </RelativeLayout>
+        <ImageView
+            android:id="@+id/powered_by_google"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/btn_grant_access"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/places_powered_by_google_light"
+            android:contentDescription="@string/app_desc"/>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+
+

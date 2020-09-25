@@ -1,0 +1,760 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Restorants.Fragment.ProfileFragments">
+
+    <LinearLayout
+        android:id="@+id/ll_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:visibility="gone"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/canvas_red_gradient"
+            android:gravity="center_vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:id="@+id/ll_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+                <com.vibescom.kutanga.View.PMTextView
+                    android:id="@+id/txt_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Madhu Chhetri"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"></com.vibescom.kutanga.View.PMTextView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/_10sdp">
+
+
+                    <com.vibescom.kutanga.View.PMTextView
+                        android:id="@+id/txt_mobile_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_7sdp"
+                        android:text="+91-9999 999 999"
+                        android:textColor="@color/dim_grey"
+                        android:textSize="@dimen/_10sdp"></com.vibescom.kutanga.View.PMTextView>
+
+                    <com.vibescom.kutanga.View.PMTextView
+                        android:id="@+id/txt_email_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:text="madhu#gmail.com"
+                        android:textColor="@color/dim_grey"
+                        android:textSize="@dimen/_10sdp"></com.vibescom.kutanga.View.PMTextView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <com.vibescom.kutanga.View.PMTextView
+                android:id="@+id/txt_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:text="@string/edit"
+                android:textColor="@color/light_pink"
+                android:textSize="@dimen/_12sdp"
+                android:visibility="visible"></com.vibescom.kutanga.View.PMTextView>
+
+
+        </RelativeLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/title_layout">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/lay_midd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/img_down_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/ic_keyboard_arrow_down_24px"></ImageView>
+
+            <LinearLayout
+                android:id="@+id/manged"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <com.vibescom.kutanga.View.PMTextView
+                    android:id="@+id/txt_my_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="@string/my_account"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"></com.vibescom.kutanga.View.PMTextView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/_5sdp">
+
+
+                    <com.vibescom.kutanga.View.PMTextView
+                        android:id="@+id/tv_check_profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:text="@string/check_your_profile"
+                        android:textColor="@color/dim_grey"
+                        android:textSize="@dimen/_10sdp"></com.vibescom.kutanga.View.PMTextView>
+
+                    <com.vibescom.kutanga.View.PMTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:text="@string/favroutes"
+                        android:textColor="@color/dim_grey"
+                        android:textSize="@dimen/_10sdp"></com.vibescom.kutanga.View.PMTextView>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+        <View
+            android:id="@+id/v2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"
+            android:visibility="gone"
+            android:background="@color/light_grey"></View>
+        <LinearLayout
+            android:id="@+id/layout_manage_addres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_grey"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.vibescom.kutanga.View.PMTextView
+                android:id="@+id/txt_favorites"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:drawableLeft="@drawable/ic_favorite_border_24px"
+                android:drawablePadding="@dimen/_2sdp"
+                android:text="@string/favroutes"
+                android:textColor="@color/user_theme_color"
+                android:textSize="@dimen/_12sdp"></com.vibescom.kutanga.View.PMTextView>
+
+            <com.vibescom.kutanga.View.PMTextView
+                android:id="@+id/txt_resetPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:drawableLeft="@drawable/ic_lock_blackk_24dp"
+                android:drawablePadding="@dimen/_2sdp"
+                android:text="@string/resetpassword"
+                android:drawableTint="@color/user_theme_color"
+                android:textColor="@color/user_theme_color"
+                android:textSize="@dimen/_10sdp"></com.vibescom.kutanga.View.PMTextView>
+
+            <com.vibescom.kutanga.View.PMTextView
+                android:id="@+id/txt_manage_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:drawableLeft="@drawable/ic_home"
+                android:drawableTint="@color/user_theme_color"
+                android:drawablePadding="@dimen/_2sdp"
+                android:text="@string/manage_addreass"
+                android:textColor="@color/user_theme_color"
+                android:textSize="@dimen/_10sdp"></com.vibescom.kutanga.View.PMTextView>
+
+        </LinearLayout>
+        <View
+            android:id="@+id/v1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/dotted_line_new"
+            android:layerType="software"></View>
+        <RelativeLayout
+            android:id="@+id/ly_past_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp">
+
+            <ImageView
+                android:id="@+id/img_past"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/ic_keyboard_arrow_down_24px"
+                android:tint="@color/dim_grey"></ImageView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.vibescom.kutanga.View.PMTextView
+                    android:id="@+id/tv_past_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/past_orders"
+                    android:textColor="@color/dim_grey"
+                    android:textSize="@dimen/_10sdp"></com.vibescom.kutanga.View.PMTextView>
+
+                <com.vibescom.kutanga.View.PMTextView
+                    android:id="@+id/tv_check_past_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="@string/past_orders_check"
+                    android:textColor="@color/dim_grey"
+                    android:textSize="@dimen/_10sdp"></com.vibescom.kutanga.View.PMTextView>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/v9"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@color/light_grey"></View>
+        //new code hare..
+
+        <LinearLayout
+            android:id="@+id/ll_visible_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_grey"
+            android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/layout_food_delivery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_below="@+id/lay_midd"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+
+
+            <com.vibescom.kutanga.View.PMTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="@string/food_delivery"
+                android:textColor="@color/user_theme_color"
+                android:textSize="@dimen/_10sdp"></com.vibescom.kutanga.View.PMTextView>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_marketplace_delivery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lay_midd"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+
+
+            <com.vibescom.kutanga.View.PMTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="@string/market_delivery"
+                android:textColor="@color/user_theme_color"
+                android:textSize="@dimen/_10sdp"></com.vibescom.kutanga.View.PMTextView>
+
+
+
+        </LinearLayout>
+
+
+        </LinearLayout>
+            <View
+                android:id="@+id/v11"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/dotted_line_new"
+                android:layerType="software"></View>
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/ly_fav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp">
+
+            <ImageView
+                android:id="@+id/img_fav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/ic_keyboard_arrow_down_24px"
+                android:tint="@color/dim_grey"></ImageView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.vibescom.kutanga.View.PMTextView
+                    android:id="@+id/tv_past_fav"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/my_fav"
+                    android:textColor="@color/dim_grey"
+                    android:textSize="@dimen/_10sdp"></com.vibescom.kutanga.View.PMTextView>
+
+                <com.vibescom.kutanga.View.PMTextView
+                    android:id="@+id/tv_check_fav"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="@string/fav_chcek"
+                    android:textColor="@color/dim_grey"
+                    android:textSize="@dimen/_10sdp"></com.vibescom.kutanga.View.PMTextView>
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/ll_visible_fav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/light_grey"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/layout_food_delivery_fav"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_below="@+id/lay_midd"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+
+
+                    <com.vibescom.kutanga.View.PMTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:text="@string/food_delivery"
+                        android:textColor="@color/user_theme_color"
+                        android:textSize="@dimen/_10sdp"></com.vibescom.kutanga.View.PMTextView>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/layout_marketplace_delivery_fav"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lay_midd"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+
+
+                    <com.vibescom.kutanga.View.PMTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:text="@string/market_delivery"
+                        android:textColor="@color/user_theme_color"
+                        android:textSize="@dimen/_10sdp"></com.vibescom.kutanga.View.PMTextView>
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <View
+                android:id="@+id/v12"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/dotted_line_new"
+                android:layerType="software"></View>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/v13"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:visibility="visible"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@color/light_grey"></View>
+        <RelativeLayout
+            android:id="@+id/ly_notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:src="@drawable/ic_chevron_right_24px"
+                android:tint="@color/dim_grey"></ImageView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.vibescom.kutanga.View.PMTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/notification"
+                    android:textColor="@color/dim_grey"
+                    android:textSize="@dimen/_12sdp"></com.vibescom.kutanga.View.PMTextView>
+
+                <com.vibescom.kutanga.View.PMTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="@string/check_notifications"
+                    android:textColor="@color/dim_grey"
+                    android:textSize="@dimen/_10sdp"></com.vibescom.kutanga.View.PMTextView>
+            </LinearLayout>
+        </RelativeLayout>
+        <View
+            android:id="@+id/v4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@color/light_grey"></View>
+
+        <RelativeLayout
+            android:id="@+id/ly_change_language"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:src="@drawable/ic_chevron_right_24px"
+                android:tint="@color/dim_grey"></ImageView>
+            <com.vibescom.kutanga.View.PMTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/change_language"
+                android:textColor="@color/dim_grey"
+                android:textSize="@dimen/_12sdp"></com.vibescom.kutanga.View.PMTextView>
+
+        </RelativeLayout>
+        <View
+            android:id="@+id/v5"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@color/light_grey"></View>
+
+        <RelativeLayout
+            android:id="@+id/ly_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:src="@drawable/ic_logout"></ImageView>
+
+            <com.vibescom.kutanga.View.PMTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/logout"
+                android:textColor="@color/dim_grey"
+                android:textSize="@dimen/_10sdp"></com.vibescom.kutanga.View.PMTextView>
+        </RelativeLayout>
+        <View
+            android:id="@+id/v6"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@color/light_grey"></View>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_notLogin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:layout_above="@+id/ll_main"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/light_grey"
+            android:layout_weight="1.2">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_15sdp">
+
+                <com.vibescom.kutanga.View.PMTextView
+                    android:id="@+id/tv_live"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:lineSpacingExtra="-20dp"
+                    android:text="@string/live_for_food"
+                    android:textStyle="bold"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/_30sdp"></com.vibescom.kutanga.View.PMTextView>
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_marginLeft="-45dp"
+                    android:layout_toRightOf="@+id/tv_live"
+                    android:src="@drawable/roll_image"></de.hdodenhof.circleimageview.CircleImageView>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/white"
+            android:layout_weight="0.8"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:orientation="vertical">
+                <com.vibescom.kutanga.View.PMTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/account"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp"></com.vibescom.kutanga.View.PMTextView>
+                <com.vibescom.kutanga.View.PMTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/account_suggection"
+                    android:textColor="@color/dim_grey"
+                    android:textSize="@dimen/_8sdp"></com.vibescom.kutanga.View.PMTextView>
+
+            </LinearLayout>
+
+            <com.vibescom.kutanga.View.PMTextView
+                android:id="@+id/btn_sign_in"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/user_theme_color"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:textAllCaps="true"
+                android:padding="@dimen/_7sdp"
+                android:text="@string/login"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/dim_grey"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"></View>
+
+            <com.vibescom.kutanga.View.PMTextView
+                android:id="@+id/btn_sign_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blue_semi_transparent"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textAllCaps="true"
+                android:padding="@dimen/_7sdp"
+                android:text="@string/signUp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+
+        android:id="@+id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible"
+        android:layout_gravity="bottom"
+        >
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/canvas_dialog_bg"
+            android:layout_height="@dimen/_60sdp"></androidx.viewpager.widget.ViewPager>
+
+        <ImageView
+            android:id="@+id/img_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:background="@drawable/parent_item_bg"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_close"></ImageView>
+    </RelativeLayout>
+</RelativeLayout>

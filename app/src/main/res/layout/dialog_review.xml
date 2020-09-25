@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:id="@+id/item"
+    android:layout_gravity="center"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/canvas_round_corner_white"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/canvas_round_corner_blue">
+
+            <com.vibescom.kutanga.View.PMTextView
+                android:id="@+id/tv_sport_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/write_review"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp"
+                />
+
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_close"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:background="@null"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_close"
+            android:tint="@color/white"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top"
+            android:orientation="vertical">
+
+            <RatingBar
+                android:id="@+id/rating_bar_review"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:scaleX="0.5"
+                android:scaleY="0.5"
+                android:numStars="5"
+                android:progressTint="@color/user_theme_color"/>
+
+            <com.vibescom.kutanga.View.PREditText
+                android:id="@+id/et_message"
+                android:layout_width="match_parent"
+				android:layout_height="@dimen/_30sdp"
+				android:layout_marginTop="@dimen/_10sdp"
+				android:layout_marginStart="@dimen/_20sdp"
+				android:layout_marginEnd="@dimen/_20sdp"
+                android:background="@drawable/canvas_forgot_editext_bg"
+                android:drawableStart="@drawable/ic_portfolio"
+				android:drawablePadding="@dimen/_10sdp"
+				android:paddingStart="@dimen/_10sdp"
+				android:paddingEnd="@dimen/_10sdp"
+                android:hint="@string/message"
+                android:textColorHint="@color/dark_grey"
+                android:textColor="@color/dim_black"
+                android:singleLine="true"
+                android:inputType="textEmailAddress"
+                android:textSize="@dimen/_10sdp"/>
+
+            <com.vibescom.kutanga.View.PMButton
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_25sdp"
+                android:layout_marginStart="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/canvas_enguire_btn_bg"
+                android:text="@string/post_review"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp" />
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

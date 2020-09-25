@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/_3sdp"
+    android:layout_marginRight="@dimen/_3sdp"
+    android:layout_marginBottom="@dimen/_3sdp"
+    android:layout_marginTop="@dimen/_3sdp"
+    app:cardCornerRadius="@dimen/_5sdp"
+    android:background="@drawable/relative_rate_review_style">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:id="@+id/top1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp">
+
+            <ImageView
+                android:id="@+id/iv_banner"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_alignParentLeft="true"
+                android:contentDescription="@string/app_desc"
+                android:scaleType="centerCrop"
+                android:src="@drawable/res_pic" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/iv_banner"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:orientation="vertical">
+
+
+                <com.vibescom.kutanga.View.PRTextView
+                    android:id="@+id/txt_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Win an iPad air today"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_8sdp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/canvas_round_corner_light_pink"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:paddingBottom="@dimen/_3sdp"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_3sdp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/multi"
+                        android:visibility="gone"></ImageView>
+
+                    <com.vibescom.kutanga.View.PRTextView
+                        android:id="@+id/txt_coupon_Type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:gravity="center_horizontal"
+                        android:text="@string/multicasia"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_8sdp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <com.vibescom.kutanga.View.PRTextView
+            android:id="@+id/txt_use_code_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_below="@+id/top1"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Use code MULT1500 &amp; get 20% discount up to Rs.125."
+            android:textColor="@color/dim_grey"
+            android:textSize="@dimen/_8sdp" />
+        <View
+            android:id="@+id/rating_divider_view"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/txt_use_code_des"
+            android:layout_height="1dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:background="@color/dark_grey"
+            android:layout_marginBottom="@dimen/_5sdp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rating_divider_view"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp">
+                <com.vibescom.kutanga.View.PRTextView
+                    android:id="@+id/txt_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:text="@string/plus_more"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/_8sdp"
+                    android:visibility="visible" />
+
+                <RadioButton
+                    android:id="@+id/txt_copied"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_alignParentEnd="true"
+                    android:padding="@dimen/_3sdp"
+                    android:button="@null"
+                    android:background="@drawable/canvas_signin_btn_bg_border"
+                    android:text="@string/copy_code"
+                    android:textColor="@color/user_theme_color"
+                    android:textSize="@dimen/_8sdp"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_tersms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.vibescom.kutanga.View.PRTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/tearms_condition"
+                    android:textColor="@color/user_theme_color"
+                    android:textSize="@dimen/_8sdp" />
+
+                <com.vibescom.kutanga.View.PRTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:gravity="center_horizontal"
+                    android:visibility="gone"
+                    android:text=" \u25BA Offer valid twice per user per month"
+                    android:textColor="@color/dim_grey"
+                    android:textSize="@dimen/_8sdp" />
+
+                <com.vibescom.kutanga.View.PRTextView
+                    android:id="@+id/tv_offer_given_by"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:text=" \u25BA Other T&amp;C's may apply"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/_8sdp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

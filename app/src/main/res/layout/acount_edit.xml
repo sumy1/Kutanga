@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@android:color/transparent"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_250sdp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/canvas_round_corner_white"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp">
+
+    <com.vibescom.kutanga.View.PRTextView
+        android:id="@+id/txt_order_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:text="@string/edit_account"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.vibescom.kutanga.View.PRTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:text="@string/username"
+                android:textAllCaps="true"
+                android:textColor="@color/dim_grey"
+                android:textSize="@dimen/_10sdp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-12dp"
+                >
+                <com.vibescom.kutanga.View.PMEditText
+                    android:id="@+id/et_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/username"
+                    android:textColorHint="@color/grey"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:gravity="center_vertical"
+                    android:layout_alignParentStart="true"
+                    android:inputType="textEmailAddress"
+                />
+                <ImageView
+                    android:id="@+id/img_done"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone"
+                    android:src="@drawable/ic_done_24px"></ImageView>
+            </RelativeLayout>
+            <com.vibescom.kutanga.View.PRTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:text="@string/phone_number"
+                android:textAllCaps="true"
+                android:textColor="@color/dim_grey"
+                android:textSize="@dimen/_10sdp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-12dp"
+                >
+                <com.vibescom.kutanga.View.PMEditText
+                    android:id="@+id/et_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/phone"
+                    android:textColorHint="@color/grey"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:gravity="center_vertical"
+                    android:layout_alignParentStart="true"
+                    android:inputType="phone"
+                    />
+                <ImageView
+                    android:id="@+id/img_done1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:visibility="gone"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_done_24px"></ImageView>
+            </RelativeLayout>
+
+            <com.vibescom.kutanga.View.PMTextView
+                android:id="@+id/btn_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/g_shadow_ligh_pink"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:textAllCaps="true"
+                android:padding="@dimen/_7sdp"
+                android:text="@string/update"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:shadowDy="20"/>
+
+        </LinearLayout>
+    </LinearLayout>
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_close"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:background="@null"
+            android:src="@drawable/ic_close"
+            android:tint="@color/theme_color" />
+    </RelativeLayout>
+
+</RelativeLayout>

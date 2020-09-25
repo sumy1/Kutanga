@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activities.Restorants.Fragment.RestorantsOfferFrag">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_offerr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:background="@color/white"></androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/rv_cart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:id="@+id/img_cart"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:src="@drawable/ic_restaurant"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"></ImageView>
+
+        <com.vibescom.kutanga.View.PMTextView
+            android:id="@+id/tv_cart_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/img_cart"
+            android:text="@string/resturants_not_found"
+            android:textColor="@color/dark_grey"
+            android:textSize="@dimen/_12sdp" />
+
+    </RelativeLayout>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_view_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:duration="800">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include layout="@layout/row_view_restorants_offer_shimer" />
+        <include layout="@layout/row_view_restorants_offer_shimer" />
+        <include layout="@layout/row_view_restorants_offer_shimer" />
+        <include layout="@layout/row_view_restorants_offer_shimer" />
+        <include layout="@layout/row_view_restorants_offer_shimer" />
+        <include layout="@layout/row_view_restorants_offer_shimer" />
+        <include layout="@layout/row_view_restorants_offer_shimer" />
+        <include layout="@layout/row_view_restorants_offer_shimer" />
+        <include layout="@layout/row_view_restorants_offer_shimer" />
+    </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+</RelativeLayout>

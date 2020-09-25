@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/window_background"
+    tools:context=".Activities.Restorants.Activity.SeeAllRestauransActivity">
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_180sdp"
+        android:layout_alignParentTop="true">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_180sdp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/res_pic"
+        >
+    </ImageView>
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/back_icon"></ImageView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lay_middle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:layout_below="@+id/top_layout">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:orientation="vertical">
+            <com.vibescom.kutanga.View.PMTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="@dimen/_12sdp"
+                android:text="@string/trending">
+
+            </com.vibescom.kutanga.View.PMTextView>
+            <com.vibescom.kutanga.View.PMTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:text="20 Restaurant">
+
+            </com.vibescom.kutanga.View.PMTextView>
+        </LinearLayout>
+
+        <com.vibescom.kutanga.View.PMTextView
+            android:id="@+id/txt_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="@dimen/_2sdp"
+            android:textColor="@color/light_pink"
+            android:drawableLeft="@drawable/ic_tune_24px"
+            android:text="@string/filter"></com.vibescom.kutanga.View.PMTextView>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_seeall"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/lay_middle"
+        android:background="@color/white"
+        android:layout_height="wrap_content"/>
+
+
+
+</RelativeLayout>

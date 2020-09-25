@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@android:color/transparent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/canvas_round_corner_white"
+        >
+
+
+
+
+        <LinearLayout
+            android:id="@+id/lay_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/canvas_round_corner_apptheme"
+            android:layout_alignParentTop="true"
+            android:padding="@dimen/_10sdp"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_veg"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:tint="@color/red"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:src="@drawable/ic_filter_center_focus_24px">
+
+            </ImageView>
+
+            <com.vibescom.kutanga.View.PMTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginLeft="@dimen/_3sdp"
+                android:textSize="@dimen/_10sdp"
+                android:text="@string/customize"></com.vibescom.kutanga.View.PMTextView>
+            <com.vibescom.kutanga.View.PMTextView
+                android:id="@+id/txt_customize_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:textSize="@dimen/_10sdp"
+                android:text="Parwan Garlic"></com.vibescom.kutanga.View.PMTextView>
+
+        </LinearLayout>
+
+            <com.vibescom.kutanga.View.PMTextView
+                android:id="@+id/tv_item_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/_32sdp"
+                android:layout_marginTop="-7dp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:textSize="@dimen/_10sdp"
+                android:text="Kz 8500"></com.vibescom.kutanga.View.PMTextView>
+        </LinearLayout>
+
+
+        <!-- <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_close"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:background="@null"
+            android:src="@drawable/ic_close"
+            android:tint="@color/theme_color" />-->
+        <com.vibescom.kutanga.View.PMTextView
+            android:id="@+id/tv_choose_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:paddingBottom="@dimen/_2sdp"
+            android:paddingTop="@dimen/_2sdp"
+            android:layout_below="@+id/lay_top"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:textSize="@dimen/_10sdp"
+            android:text="@string/choose_your_quantity"></com.vibescom.kutanga.View.PMTextView>
+
+
+
+
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radia_id1"
+            android:text="DBMS"
+            android:layout_below="@+id/tv_choose_quantity"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_11sdp"
+            android:textSize="@dimen/_8sdp"/>
+
+        <View
+            android:id="@+id/v"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layerType="software"
+            android:layout_below="@+id/radia_id1"
+            android:background="@drawable/dotted_line_new"></View>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_category_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/buttom"
+            android:layout_below="@+id/v"
+            />
+
+        <RelativeLayout
+            android:id="@+id/buttom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/user_theme_color"
+            android:padding="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+
+            <com.vibescom.kutanga.View.PMTextView
+                android:id="@+id/tv_totalItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:textSize="@dimen/_10sdp"
+                android:text=""></com.vibescom.kutanga.View.PMTextView>
+
+            <com.vibescom.kutanga.View.PMTextView
+                android:id="@+id/tv_updateItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/white"
+                android:text="@string/add_item"
+                android:layout_gravity="center_vertical"
+                ></com.vibescom.kutanga.View.PMTextView>
+        </RelativeLayout>
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_close"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:background="@null"
+            android:visibility="gone"
+            android:src="@drawable/ic_close"
+            android:tint="@color/theme_color" />
+    </RelativeLayout>
+
+</RelativeLayout>

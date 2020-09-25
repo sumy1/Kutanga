@@ -1,0 +1,134 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "com.vibescom.kutanga"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'com.android.support:design:23.0.1'
+    implementation 'com.google.android.material:material:1.1.0-alpha09'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    testImplementation 'junit:junit:4.12'
+
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    /**
+     * Custom Type API Request Library
+     */
+    implementation 'com.squareup.okhttp:okhttp-urlconnection:2.0.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.squareup.okhttp3:okhttp:3.4.1'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+
+    /**
+     * Custom Type Circle Image Library
+     */
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    /**
+     * Custom Type Progress Loader Library
+     */
+    implementation project(':AnimatedLoadingIndicator')
+
+    /**
+     * Custom Type OTP View Library
+     */
+    implementation 'com.github.mukeshsolanki:android-otpview-pinview:2.0.1'
+    /**
+     * Custom Type Page Indicator Library
+     */
+    implementation 'com.github.JakeWharton:ViewPagerIndicator:2.4.1'
+    /**
+     * Google Auth Library
+     */
+    implementation 'com.google.android.gms:play-services-auth:17.0.0'
+    /**
+     * Facebook Auth Library
+     */
+    implementation 'com.facebook.android:facebook-android-sdk:[5,6)'
+    implementation 'com.facebook.shimmer:shimmer:0.1.0@aar'
+    //implementation 'com.jsibbold:zoomage:1.2.0'
+
+    /**
+     * Custom Type Image Caching Library
+     */
+    implementation 'com.github.bumptech.glide:glide:4.10.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.10.0'
+
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'jp.wasabeef:picasso-transformations:2.2.1'
+
+    /**
+     * Custom Type Tab Layout Library
+     */
+    implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+    implementation 'com.ogaclejapan.smarttablayout:library:2.0.0@aar'
+
+    /**
+     * Custom Type scalable text size Library
+     */
+
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    /**
+     * Custom Type Type_Face Text Library
+     */
+
+    implementation 'com.github.Mostafa-MA-Saleh:EditCredit:1.6.1'
+
+    /**
+     * Google service for Google Places.
+     */
+    implementation 'com.google.android.libraries.places:places:2.0.0'
+    implementation 'com.google.android.gms:play-services-maps:15.0.1'
+    implementation 'com.google.android.gms:play-services-location:15.0.1'
+    /**
+     * Google Auth for Google Sign In.
+     */
+    implementation 'com.google.android.gms:play-services-auth:17.0.0'
+    /**
+     * Facebook login for Facebook Sign In.
+     */
+    implementation 'com.github.vipulasri:timelineview:1.1.3'
+    implementation 'com.android.volley:volley:1.1.0'
+    implementation 'com.github.mancj:SlideUp-Android:2.2.8'
+
+
+
+
+
+}

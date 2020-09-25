@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/canvas_red_gradient"
+    android:gravity="center_vertical">
+
+    <RelativeLayout
+        android:id="@+id/search_layout_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_centerVertical="true"
+            android:paddingStart="@dimen/_5sdp"
+            android:src="@drawable/gps"></ImageView>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/clear"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_toRightOf="@+id/img_back"
+            android:orientation="vertical">
+
+            <com.vibescom.kutanga.View.PMTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/set_delivery_to"
+               android:layout_marginBottom="-5dp"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/dim_grey"></com.vibescom.kutanga.View.PMTextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+            <com.vibescom.kutanga.View.PMTextView
+                android:id="@+id/txt_deliver_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_2sdp"
+                android:layout_toLeftOf="@+id/img_drop_arrow"
+                android:text="hsdskjnskjndsndlksj gdgsdggjdgaD ADJAGdgaD AdaIUD"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold"
+                android:textColor="@color/user_theme_color" />
+                <ImageView
+                    android:id="@+id/img_drop_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:src="@drawable/ic_drop_down_fill_arrow"></ImageView>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
